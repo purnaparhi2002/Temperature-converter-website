@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="converter">
+            <input type="number" id="tempInput" class="temp-input" placeholder="Enter temperature" />
+            
+            <select id="unitFrom" class="unit-select">
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
+            
+            <span>to</span>
+            
+            <select id="unitTo" class="unit-select">
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
+            
+            <div class="result">
+                <h2>Converted Value: <span id="resultValue">0</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="Task.js"></script>
+</body>
+</html>
